@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header style="background-image: url('https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149115239.jpg'); width:100%;height: 350px;">
+        <nav class="navbar bg-body-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">
+                <i class="fa-solid fa-house fa-2x"></i>
+                <span class="fs-3 ms-2 fw-bolder"> Landing Page</span>
+              </a>
+              <button type="button" onclick="logout()" class="btn btn-outline-light"><i class="fa-solid fa-power-off me-2"></i>Logout</button>
+            </div>
+          </nav>
+    </header>
+
+    <div class="w-100">
+        <h2 class="mt-5 text-center">Welcome <span class="text-danger " id="result">User</span></h2>
+        <p style="margin: 30px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur atque aspernatur, minus obcaecati asperiores sed minima? Ab perspiciatis veritatis mollitia, minima, repellat officiis ea cumque atque aperiam, accusamus consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur atque aspernatur, minus obcaecati asperiores sed minima? Ab perspiciatis veritatis mollitia, minima, repellat officiis ea cumque atque aperiam, accusamus consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur atque aspernatur, minus obcaecati asperiores sed minima? Ab perspiciatis veritatis mollitia, minima, repellat officiis ea cumque atque aperiam, accusamus consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur atque aspernatur, minus obcaecati asperiores sed minima? Ab perspiciatis veritatis mollitia, minima, repellat officiis ea cumque atque aperiam, accusamus consequuntur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur atque aspernatur, minus obcaecati asperiores sed minima? Ab perspiciatis veritatis mollitia, minima, repellat officiis ea cumque atque aperiam, accusamus consequuntur.</p>
+    </div>
+</body>
+<script>
+  let user = localStorage.getItem("username")
+  if(user){
+    result.innerHTML = user
+  }
+  else{
+    alert('please login')
+    window.location ='index.html'
+  }
+
+  function logout(){
+  localStorage.removeItem("username")
+  window.location = 'index.html'
+  }
+
+
+</script>
+</html>

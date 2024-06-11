@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header style="background-image: url('https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149115239.jpg'); width:100%;height: 350px;">
+        <nav class="navbar bg-body-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">
+                <i class="fa-solid fa-house fa-2x"></i>
+                <span class="fs-3 ms-2 fw-bolder"> Landing Page</span>
+              </a>
+            </div>
+          </nav>
+    </header>
+
+    <div class="row m-3">
+      <h2>Welcome to our <span class="text-primary">Website</span></h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis fugiat velit iusto eaque vel nam, aliquam consequatur delectus omnis voluptatum neque quidem sed debitis tenetur, esse similique vitae quae pariatur!Loremlorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum numquam, architecto dolorum, voluptas fugit saepe cumque cupiditate placeat fuga repellendus vero hic quidem nulla beatae? Eum quisquam doloribus quas voluptatum.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nesciunt tenetur suscipit blanditiis. Consequuntur accusamus doloribus culpa nesciunt laboriosam iste accusantium? Quod doloremque commodi, dolores fugiat labore ipsam vero accusamus.</p>
+       
+       <div class="col-md-1"></div>
+       <div class="col-md-5 py-3 px-5">
+        <img src="https://www.blogsaays.com/wp-content/uploads/2022/11/android-gif-banner-2.gif" alt=" no image"  width="100%" height="100%">
+       </div>
+       <div class="col-md-5 py-3  px-5">
+           <form class="shadow rounded px-3 py-3" style="background-image: linear-gradient(to right , rgb(153, 153, 220) , rgba(217, 210, 210, 0.774));">
+             <h3 class="text-center text-primary">Register</h3>
+             <div class="mb-4 mt-5">
+                  <input id="regusername" type="text" placeholder="username" class="form-control">
+             </div>
+             <div class="mb-4">
+              <input id="regpswd" type="text" placeholder="password" class="form-control">
+         </div>
+         <div class="mb-3">
+          <button onclick="obj.register()" class="btn btn-primary" type="button">SignUp</button>
+          <span class="ms-2">Are you already a user?click Here to <a href="index.html"> Login</a></span>
+     </div>
+           </form>
+       </div>
+       <div class="col-md-1"></div>
+    </div>
+
+</body>
+<script src="./logic.js"></script>
+</html>
